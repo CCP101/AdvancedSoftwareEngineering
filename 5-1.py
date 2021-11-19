@@ -12,4 +12,7 @@ if __name__ == '__main__':
         b *= (q+1)
         list_num.append(q+1)
     list_num.append(int(b/a))
-    print(list_num)
+    str_result = ""
+    for i in list_num:
+        str_result += "1/" + str(i) + "+"
+    print(str_math + "=" + str_result[:-1])
