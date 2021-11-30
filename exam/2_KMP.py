@@ -1,6 +1,6 @@
 # 改进版 与书上不同 更暴力 建议打断点理解
 class Solution:
-    def strStr(self, haystack: str, needle: str) -> int:
+    def strStr(self, haystack: str, needle: str):
         def getNext(p):
             n = len(p)
             next = [-1] * n
@@ -28,7 +28,6 @@ class Solution:
                 j += 1
             else:
                 j = next[j]
-        # print(i,j)
         if j == n2:
             return i - j
         return -1
